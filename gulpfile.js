@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
 var src = {
-    css: ['./src/css/style.css'],
+    css: ['./src/css/style.css', './src/css/mentees.css', './src/css/mentors.css'],
     js: ['./src/js/mentors.js']
 };
 
@@ -23,7 +23,9 @@ gulp.task('html', function() {
 gulp.task('css', function() {
 
     return gulp.src(vendors.css.concat(src.css))
+        .pipe(sourcemaps.init())
         .pipe(concat('app.css'))
+        .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('./public'))
         .pipe(browserSync.stream());
 
@@ -32,7 +34,9 @@ gulp.task('css', function() {
 gulp.task('js', function() {
 
     return gulp.src(vendors.js.concat(src.js))
+        .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
+        .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('./public'));
 
 });
