@@ -31,6 +31,8 @@ gulp.task('css', function() {
 
 });
 
+gulp.task('js-watch', ['js'], browserSync.reload);
+
 gulp.task('js', function() {
 
     return gulp.src(vendors.js.concat(src.js))
@@ -50,6 +52,7 @@ gulp.task('serve', ['default'], function() {
     });
     gulp.watch(src.css, ['default']);
     gulp.watch("./src/index.html", ['html']);
+    gulp.watch(src.js, ['js-watch']);
     gulp.watch("./public/index.html").on('change', browserSync.reload);
 
 });

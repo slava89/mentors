@@ -10,7 +10,21 @@
 <body ng-app="mentorss">
 
 <div >
-	{{Hello world!}}
+	{{"Hello world!!!!!!!!!!!"}}
+</div>
+
+<div class="container" ng-controller="MentorsListController as mentorCtrl">
+
+	<div class="row">
+		<div class="col-md-6">
+	 		<div ng-repeat="mentor in mentorCtrl.data">
+			<p>{{mentor.name}}</p>
+
+	 		<div>
+		</div>
+
+	</div>
+	
 </div>
 
 
