@@ -1,28 +1,30 @@
 {
-    "name": "mentors",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "gulp serve",
-        "default": "gulp default"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/slava89/mentors.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/slava89/mentors/issues"
-    },
-    "homepage": "https://github.com/slava89/mentors#readme",
-    "dependencies": {
-        "bower": "^1.5.2",
-        "browser-sync": "^2.9.3",
-        "gulp": "^3.9.0",
-        "gulp-concat": "^2.6.0",
-        "gulp-sourcemaps": "^1.5.2"
-    }
+  "name": "mentors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve",
+    "default": "gulp default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slava89/mentors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slava89/mentors/issues"
+  },
+  "homepage": "https://github.com/slava89/mentors#readme",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "jasmine-core": "^2.3.4",
+    "karma-jasmine": "^0.3.6"
+  }
 }
