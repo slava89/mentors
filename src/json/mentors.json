@@ -1,37 +1,32 @@
  [{
      "name": "Viktor",
      "amountOfMentees": 2,
-     "id": 1
+     "id": 1,
+     "image": "https://upload.wikimedia.org/wikipedia/ru/3/3c/The_Jimi_Hendrix_Experience%2C_%27Little_Wing%27.jpg"
+
  }, {
      "name": "Valeriy",
      "amountOfMentees": 3,
-     "id": 1
+     "id": 1,
+     "image": "http://zakazartistov.com/upload/medialibrary/a3e/a3e018dc4c92bbbd67b8431ee4b353dc.jpg"
  }, {
      "name": "Sergii",
      "amountOfMentees": 1,
-     "id": 1
+     "id": 1,
+     "image": "http://img.news.open.by/upload/iblock/dd2/claus300.jpg"
  }, {
      "name": "Andrii",
      "amountOfMentees": 1,
-     "id": 1
+     "id": 1,
+     "image": "http://coolspotters.com/files/photos/1000677/mark-knopfler-profile.jpg?1359798763"
  }, {
      "name": "Liubomyr",
      "amountOfMentees": 2,
-     "id": 1
+     "id": 1,
+     "image": "http://showbi.ru/upload/2015/05/05/20150505115046-1f1b4f7b.jpg"
  }, {
      "name": "Oleksii",
      "amountOfMentees": 1,
-     "id": 1
+     "id": 1,
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ray_Charles_classic_piano_pose.jpg/220px-Ray_Charles_classic_piano_pose.jpg"
  }]
-
- /*
-{
-  "responses": [
-    {"name": "Viktor", "amountOfMentees": 2, "id": 1},
-    {"name": "Valeriy", "amountOfMentees": 3, "id": 1},
-    {"name": "Sergii", "amountOfMentees": 1, "id": 1},
-    {"name": "Andrii", "amountOfMentees": 1, "id": 1},
-    {"name": "Liubomyr", "amountOfMentees": 2, "id": 1},
-    {"name": "Oleksii", "amountOfMentees": 1, "id": 1}
-  ]
-}*/
