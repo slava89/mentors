@@ -35,7 +35,7 @@ gulp.task('css', function() {
 gulp.task('json', function() {
 
     return gulp.src(src.json)
-        .pipe(gulp.dest('./public'));
+        .pipe(gulp.dest('./public/json'));
 
 
 });
