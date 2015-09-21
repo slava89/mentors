@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
 var src = {
     css: ['./src/css/style.css', './src/css/mentees.css', './src/css/mentors.css'],
     js: ['./src/js/mentors.js', './src/js/mentees.js'],
-    json: ['/src/json/*.json']
+    json: ['./src/json/*.json']
 };
 
 var vendors = {
