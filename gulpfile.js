@@ -5,7 +5,8 @@ var browserSync = require('browser-sync').create();
 
 var src = {
     css: ['./src/css/style.css', './src/css/mentees.css', './src/css/mentors.css'],
-    js: ['./src/js/mentors.js', './src/js/mentees.js']
+    js: ['./src/js/mentors.js', './src/js/mentees.js'],
+    json: ['/src/json/*.json']
 };
 
 var vendors = {
@@ -31,7 +32,16 @@ gulp.task('css', function() {
 
 });
 
+gulp.task('json', function() {
+
+    return gulp.src(src.json)
+        .pipe(gulp.dest('./public'));
+
+
+});
+
 gulp.task('js-watch', ['js'], browserSync.reload);
+gulp.task('json-watch', ['json'], browserSync.reload);
 
 gulp.task('js', function() {
 
@@ -44,14 +54,17 @@ gulp.task('js', function() {
 });
 
 
-gulp.task('default', ['css', 'js', 'html']);
+gulp.task('default', ['css', 'js', 'html', 'json']);
 
 gulp.task('serve', ['default'], function() {
     browserSync.init({
         server: "./public"
     });
     gulp.watch(src.css, ['default']);
+    gulp.watch(src.json, ['default']);
     gulp.watch("./src/index.html", ['html']);
+    gulp.watch(src.json, ['json-watch']);
+
     gulp.watch(src.js, ['js-watch']);
     gulp.watch("./public/index.html").on('change', browserSync.reload);
 
