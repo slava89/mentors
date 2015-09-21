@@ -9,7 +9,13 @@
             $http.get('/json/mentors.json').success(function(data) {
 
                 vm.mentors = data;
+
             });
+
+            vm.setOrder = function(order) {
+                vm.order = order;
+            };
+
 
         }
     ]);

@@ -13,13 +13,29 @@
 
 	<div class="container" ng-controller="MentorsListController as mentorCtrl">
 
+
+		<ul class="nav nav-pills">
+			<li>
+				<a href="#" ng-click="setOrder('name')">ASC</a>
+			</li>
+
+			<li>
+				<a href="#" ng-click="setOrder('-name')">DESC</a>
+			</li>
+		</ul>
+
+
+
 		<div class="row">
+
 			<div class="col-md-6">
-		 		<div ng-repeat="mentor in mentorCtrl.mentors">
+		 		<div ng-repeat="mentor in mentorCtrl.mentors | orderBy : order">
 					
 					<p>{{mentor.name}} </p> 
 
-					<p ng-pluralize count="{{mentor.amountOfMentees}}" when="{'0': 'no mentee :(', 'one': '1 mentee', 'other': '{{mentor.amountOfMentees}} mentees'}"></p>
+					<p ng-pluralize count="{{mentor.amountOfMentees}}" when="{'0': 'no mentee :(', 'one': '1 mentee', 'other': '{{mentor.amountOfMentees}} mentees'}">
+						
+					</p>
 
 					<img ng-src="{{mentor.image}}"></img>
 
